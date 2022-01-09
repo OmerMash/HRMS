@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hrms.hrms.HelloController">
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="person_creation_label" text="Label" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="175.0" prefWidth="550.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="59.0" text="Full Name:" />
+            <TextField fx:id="full_name_tf">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></TextField>
+            <Label layoutX="10.0" layoutY="10.0" text="Age:" />
+            <TextField fx:id="age_tf">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></TextField>
+            <Label text="ID:" />
+            <TextField fx:id="id_tf" />
+            <Label layoutX="10.0" layoutY="134.0" text="Profession:" />
+            <TextField fx:id="profession_tf" layoutX="10.0" layoutY="37.0" />
+            <Label layoutX="10.0" layoutY="196.0" text="Years of experience:" />
+            <TextField fx:id="YOE_tf" layoutX="10.0" layoutY="223.0" />
+            <Button mnemonicParsing="false" onAction="#onAddButtonClick" text="Add">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Button layoutX="10.0" layoutY="320.0" mnemonicParsing="false" onAction="#writeFile" text="Add to File" />
+            <Button layoutX="10.0" layoutY="355.0" mnemonicParsing="false" onAction="#writeFile" text="Search" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin></VBox>
+   </top>
+</BorderPane>
